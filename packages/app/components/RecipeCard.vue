@@ -18,8 +18,10 @@ defineProps({
     <p class="my-0">
       {{ recipe.description }}
     </p>
-    <NuxtLink :to="`/recettes/${recipe.slug}`">
-      Voir la recette
+    <NuxtLink :to="`/recettes/${recipe.slug}`" class="no-underline">
+      <label class="bg-orange-500 text-white px-2 py-1 cursor-pointer">
+        Voir la recette
+      </label>
     </NuxtLink>
   </li>
 </template>
